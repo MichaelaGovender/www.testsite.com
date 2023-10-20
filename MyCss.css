@@ -1,0 +1,67 @@
+      
+.navbar{						
+margin : 0 auto;
+width : 100px;
+position: fixed;
+top : 0;
+}
+			
+.navbar ul{
+padding : 0px;
+width : 100px;
+text-align : left;
+}
+			
+.navbar ul li{
+float:left;
+margn: 1px;
+position : relative;
+background-color : Black;
+border-radius: 0px;
+list-style-type : none;
+max-width : 100%;
+width:100px;
+
+}
+			
+.navbar ul li a{
+text-decoration : none;
+color: white;
+padding : 5px;
+font-weight : bolder;
+font-size: 13px;
+display : block;
+width : 180px;
+}
+			
+.navbar ul li ul{
+position : absolute;
+visibility : hidden;
+}
+			
+.navbar ul li:hover ul{
+visibility : visible
+}
+			
+.navbar ul li a : hover{
+color:white;
+}
+			
+.navbar ul li:hover{
+background-color: red;
+}
+			
+.floatRight{ 				
+float:right;
+margin-left:20px;
+}
+
+.floatRightClear{
+	float:right;
+	clear:right;
+	margin-left:20px;
+	}
+	
+.footer{
+			max-width : 100%
+			}

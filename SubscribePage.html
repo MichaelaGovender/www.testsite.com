@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Richfield Graduate Institute of Technology </title>
+		
+		<link rel="stylesheet" href="MyCss.css" Type="text/css"/>   <!--link for external css-->
+		
+		<Style>
+			
+			label {								<!--Styles labels-->
+			width:200px;
+			display: inline-table;
+			}
+			
+			.footer{							<!--Styles footer-->
+			margin : 0 auto;
+			width : 1850px;
+			padding:5px;
+			color : White;
+			background-color : navy;
+			}
+			
+		</Style>
+	
+	</head>
+
+	<body bgcolor = "beige">
+	
+	   <img src="RichfieldLogo.png"/>		<!--Displays logo-->
+	    
+		<div class="search-bar">			<!--Displays logo-->
+			<div style="text-align : right;">
+			<input class="search-text" type="text" name>
+			<a class="search-button" href="#"></a>
+		</div>
+	   
+	   </br>
+	   
+	   <div class="navbar">					<!--Displays menu bar-->
+		<ul>
+			<li><a href="RichfieldHomePage.html">Home Page</a></li>
+			<li><a href="PaymentMethodsPage.html">Payment Methods</a></li>
+			<li><a href="MediaPage.html">Media</a></li>
+			<li><a href="#">Campuses</a></li>
+			<li><a href="#">Study With Us</a></li>
+			<li><a href="#">Programs</a>		<!--Dropdown menu bar-->
+			<ul>
+				<li><a href="#">HET</a></li>
+				<li><a href="#">FET</a></li>
+				<li><a href="#">TVET</a></li>
+				<li><a href="#">Skills</a></li>
+			</ul>
+			</li>
+			<li><a href="#">Apply Now</a></li>
+		</ul>
+		</div>
+		
+		</br>
+		</br>
+		</br>
+		</br>
+		
+	    <fieldset>
+		<legend>Application Form</legend>			<!--Creating a form-->
+			<form method="POST" action="mailto:michaelagovender94@gmail.com?" >
+		
+			<table cellpadding="5px">					<!--Creating a table-->
+			
+			<tr>
+				<td><input type="text" size = "100" id="name" placeholder = "First Name"
+				value="" name="name" required="required"/></td>	 <!--text input for name-->
+			</tr>
+			
+			<tr>
+				<td><input type="text" size = "100" id="surname" placeholder = "Surname" 
+				value="" name="surname" required="required"/></td>  <!--text input for surname-->
+			</tr>
+			
+			<tr>
+				<td><input type="text" size = "100" id="email" placeholder = "Email Address" 
+				value="" name="email" required="required"/></td>	<!--text input for email-->
+			</tr>
+			
+			<tr>
+				<td><input type="text" size = "100" id="cellno" placeholder = "Cellphone Number"
+				value="" name="cellno" required="required"/></td>	<!--text input for cell number-->
+			</tr>
+			
+			<tr>
+				<td><input type="text" size = "100" id="IDnumber" placeholder = "ID Number" 
+				value="" name="IDnumber" required="required"/></td>		<!--text input for ID number-->
+			</tr>
+			
+			<tr>
+                <td><input type="text" id="birthday" placeholder = "Date of Birth" size = "100"  
+				value="" name="birthday" required="required" onfocus="(this.type='date')"/></td>
+				                                            <!--input for date of birth using calendar-->
+			</tr>
+		
+			
+			<tr>
+				<td><label for="Course"  >Course:</label>    <!--input for course using dropdown listbox-->
+				<Select id ="Course" style = "width : 530px; " size = ""  required = "required">
+				<option value="" disabled selected hidden>Choose a course</option>
+				<option>Bachelor of Science:IT</option>
+				<option>Diploma:IT</option>
+				<option>Higher Certificate:IT</option>
+				<option>Bachelor of Science honours:IT</option>
+				<option>Bachelor of Commerce</option>
+				<option>Bachelor of Business Administration</option>
+				<option>Diploma in Business Administration</option>
+				<option>Higher Certificate in business Administration</option>
+				</select></td>
+			</tr>
+			
+			<tr>
+				<td><label for="Education" >Highest Education Level:</label> <!--input for education level using dropdown listbox-->
+				<Select id ="Education" style = "width : 530px; " size = ""  required = "required">
+				<option value="" disabled selected hidden>Choose highest education level</option>
+				<option>No High-school</option>
+				<option>Higher Certificate</option>
+				<option>National Senior Certificate-Gr12</option>
+				<option>Bachelor's Degree</option>
+				<option>Post Graduate Certificate</option>
+				</select></td>
+			</tr>
+			
+			<tr>
+				<td>								<!--input for ID type using radio buttons-->
+				<div style = "float : left;">
+				<label for="">Identification Type:</label>
+				</div>
+				<div style = "float : left;">
+				<input type="radio" id="passno"  value="" name="IDtype" required="required"/>
+				<label for="passno">Passport Number</label>  				
+				  </br>
+				<input type="radio" id="IDno"  value="" name="IDtype" required="required"/>
+				<label for="IDno">ID Number</label>
+				</div>
+				<div style="clear: both"></div>
+				</td>
+			</tr>
+			
+			<tr>									<!--input for gender using radio buttons-->
+				<td>
+				<div style = "float : left;">
+				<label for="">Gender:</label>
+				</div>
+				<div style = "float : left;">
+				<input type="radio" id="male"  value="" name="gender" required="required"/>
+				<label for="male">Male</label>  			
+				  </br>
+				<input type="radio" id="female"  value="" name="gender" required="required"/>
+				<label for="female">Female</label>
+				</div>
+				<div style="clear: both"></div>
+				</td>
+			</tr>
+			
+			<tr>     								<!--input for population group using dropdown listbox-->
+				<td><label for="Populationgrp" >Population Group:</label>
+				<Select id ="Populationgrp" style = "width : 530px; " size = ""  required = "required">
+				<option value="" disabled selected hidden>Choose population group</option>
+				<option>White</option>
+				<option>Black</option>
+				<option>Indian</option>
+				<option>Asian</option>
+				<option>Mixed</option>
+				<option>Other</option>
+				</select></td>
+			</tr>
+			
+			<tr>										
+				<td><input type="text" size = "100" id="Nationality" placeholder = "Nationality" 
+				value="" name="Nationality" required="required"/></td>		<!--text input for Nationality-->
+			</tr>
+			
+			<tr>
+				<td colspan="3"><textarea style="resize:none;" placeholder = "Address" id="address" 
+				  rows="5" cols="100"></textarea></td>						<!--text input for address-->
+			</tr>
+			
+			<tr>
+				<td colspan="4"><input type="submit" value="Send Button"</td>		<!--Button to send data-->
+			</tr>
+		</table>
+		</form>
+	</fieldset>
+	
+		
+		
+		</br>
+		</br>
+		
+		<div class="footer" >			<!--Displays footer-->
+		&reg; Website designed by 158333 &trade; BSC IT 2020 &copy; All Rights Reserved
+		</div>
+
+	
+	</body>
+
+
+
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Dante's Spice Delight </title>
+		
+		<link rel="stylesheet" href="MyCss.css" Type="text/css"/>   <!--link for external css-->
+		
+		<meta name="viewport" content="width=device-width">
+		
+		<Style>
+			
+			label {								<!--Styles labels-->
+			width:200px;
+			display: inline-table;
+			}
+			
+			img{
+			max-width : 100%
+			}
+			
+			.footer{							<!--Styles footer-->
+			margin : 0 auto;
+			width : 1850px;
+			padding:5px;
+			color : White;
+			background-color : navy;
+			}
+			
+		</Style>
+	
+	</head>
+
+	<body bgcolor = "beige">
+	
+	   <img src="Dantes2.png" width = 100%/>	<!--Displays logo-->
+	    
+		<!--<div class="search-bar">
+			<div style="text-align : right;">
+			<input class="search-text" type="text" name>	<!--Displays search bar-->
+			<!--<a class="search-button" href="#"></a>
+		</div> -->
+	   
+	   </br>
+	   
+	   <div class="navbar" >		<!--Displays menu bar at the top-->
+		<ul>
+			<li><a href="#">Menu</a>
+			<ul>
+			<li><a href="DantesHomePage.html">HomePage</a></li>
+			<li><a href="ProductsPage.html">Products</a></li>
+			<li><a href="ServicesPage.html">Services</a></li>
+			<li><a href="BlogsPage.html">Blogs</a></li>
+			<li><a href="OrderNowPage.html">OrderNow</a></li>
+			<li><a href="ContactUsPage.html">ContactUs</a></li>
+			</ul>
+			</li>
+		</ul>
+		</div>
+		
+		</br>
+		</br>
+		</br>
+		</br>
+		
+		<h1 style="text-align: center">COMING SOON</h1>
+		
+		</br>
+		</br>
+		</br>
+		
+	    <fieldset>
+		<legend>Application Form</legend>			<!--Creating a form-->
+			<form method="POST" action="mailto:michaelagovender94@gmail.com?" >
+		
+			<table cellpadding="5px">					<!--Creating a table-->
+			
+			<tr>
+				<td><input type="text" size = "100" id="name" placeholder = "First Name"
+				value="" name="name" required="required"/></td>	 <!--text input for name-->
+			</tr>
+			
+			<tr>
+				<td><input type="text" size = "100" id="surname" placeholder = "Surname" 
+				value="" name="surname" required="required"/></td>  <!--text input for surname-->
+			</tr>
+			
+			<tr>
+				<td><input type="text" size = "100" id="email" placeholder = "Email Address" 
+				value="" name="email" required="required"/></td>	<!--text input for email-->
+			</tr>
+			
+			<tr>
+				<td><input type="text" size = "100" id="cellno" placeholder = "Cellphone Number"
+				value="" name="cellno" required="required"/></td>	<!--text input for cell number-->
+			</tr>
+			
+			<tr>
+				<td><input type="text" size = "100" id="IDnumber" placeholder = "ID Number" 
+				value="" name="IDnumber" required="required"/></td>		<!--text input for ID number-->
+			</tr>
+			
+			<tr>
+                <td><input type="text" id="birthday" placeholder = "Date of Birth" size = "100"  
+				value="" name="birthday" required="required" onfocus="(this.type='date')"/></td>
+				                                            <!--input for date of birth using calendar-->
+			</tr>
+		
+			
+			<tr>
+				<td><label for="Course"  >Course:</label>    <!--input for course using dropdown listbox-->
+				<Select id ="Course" style = "width : 530px; " size = ""  required = "required">
+				<option value="" disabled selected hidden>Choose a course</option>
+				<option>Bachelor of Science:IT</option>
+				<option>Diploma:IT</option>
+				<option>Higher Certificate:IT</option>
+				<option>Bachelor of Science honours:IT</option>
+				<option>Bachelor of Commerce</option>
+				<option>Bachelor of Business Administration</option>
+				<option>Diploma in Business Administration</option>
+				<option>Higher Certificate in business Administration</option>
+				</select></td>
+			</tr>
+			
+			<tr>
+				<td><label for="Education" >Highest Education Level:</label> <!--input for education level using dropdown listbox-->
+				<Select id ="Education" style = "width : 530px; " size = ""  required = "required">
+				<option value="" disabled selected hidden>Choose highest education level</option>
+				<option>No High-school</option>
+				<option>Higher Certificate</option>
+				<option>National Senior Certificate-Gr12</option>
+				<option>Bachelor's Degree</option>
+				<option>Post Graduate Certificate</option>
+				</select></td>
+			</tr>
+			
+			<tr>
+				<td>								<!--input for ID type using radio buttons-->
+				<div style = "float : left;">
+				<label for="">Identification Type:</label>
+				</div>
+				<div style = "float : left;">
+				<input type="radio" id="passno"  value="" name="IDtype" required="required"/>
+				<label for="passno">Passport Number</label>  				
+				  </br>
+				<input type="radio" id="IDno"  value="" name="IDtype" required="required"/>
+				<label for="IDno">ID Number</label>
+				</div>
+				<div style="clear: both"></div>
+				</td>
+			</tr>
+			
+			<tr>									<!--input for gender using radio buttons-->
+				<td>
+				<div style = "float : left;">
+				<label for="">Gender:</label>
+				</div>
+				<div style = "float : left;">
+				<input type="radio" id="male"  value="" name="gender" required="required"/>
+				<label for="male">Male</label>  			
+				  </br>
+				<input type="radio" id="female"  value="" name="gender" required="required"/>
+				<label for="female">Female</label>
+				</div>
+				<div style="clear: both"></div>
+				</td>
+			</tr>
+			
+			<tr>     								<!--input for population group using dropdown listbox-->
+				<td><label for="Populationgrp" >Population Group:</label>
+				<Select id ="Populationgrp" style = "width : 530px; " size = ""  required = "required">
+				<option value="" disabled selected hidden>Choose population group</option>
+				<option>White</option>
+				<option>Black</option>
+				<option>Indian</option>
+				<option>Asian</option>
+				<option>Mixed</option>
+				<option>Other</option>
+				</select></td>
+			</tr>
+			
+			<tr>										
+				<td><input type="text" size = "100" id="Nationality" placeholder = "Nationality" 
+				value="" name="Nationality" required="required"/></td>		<!--text input for Nationality-->
+			</tr>
+			
+			<tr>
+				<td colspan="3"><textarea style="resize:none;" placeholder = "Address" id="address" 
+				  rows="5" cols="100"></textarea></td>						<!--text input for address-->
+			</tr>
+			
+			<tr>
+				<td colspan="4"><input type="submit" value="Send Button"</td>		<!--Button to send data-->
+			</tr>
+		</table>
+		</form>
+	</fieldset>
+	
+		
+		
+		</br>
+		</br>
+		
+		<div class="footer">            <!--Displays footer-->
+		&reg; Dante's Spice Delight &copy; All Rights Reserved
+		</div>
+
+	
+	</body>
+
+
+
+
+</html>
